@@ -60,7 +60,7 @@ public class CategoriaController {
 	
 	@PutMapping
 	public ResponseEntity<Categoria> put (@RequestBody Categoria categoria) {
-		return ResponseEntity.status(HttpStatus.CREATED).body(categoriaRepository.save(categoria));
+		return ResponseEntity.status(HttpStatus.OK).body(categoriaRepository.save(categoria));
 	}
 	
 	@DeleteMapping("/{id}")
